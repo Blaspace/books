@@ -1,0 +1,148 @@
+const faithBooks = [
+  {
+    name: "Andrew_Wommack_Living_in_the_Balance of Grace and Faith",
+    author: "Andrew Wommack",
+    url: require("../public/faith/Andrew_Wommack_Living_in_the_Balance of Grace and Faith.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Another Look at Faith - Kenneth W Hagin",
+    author: "Kenneth W Hagin",
+    url: require("../public/faith/Another Look at Faith - Kenneth W Hagin.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Benson Idahosa - Strangers to Failure",
+    author: "Benson Idahosa",
+    url: require("../public/faith/Benson Idahosa - Strangers to Failure.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "DON'T LIMIT GOD - Charles Hunter",
+    author: "Charles Hunter",
+    url: require("../public/faith/DON'T LIMIT GOD - Charles Hunter.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Faith and Patience_ The Power Twins - Kenneth Copeland",
+    author: "Kenneth Copeland",
+    url: require("../public/faith/Faith and Patience_ The Power Twins - Kenneth Copeland.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Faith_ The Link with Gods Power - Reinhard Bonnke",
+    author: "Reinhard Bonnke",
+    url: require("../public/faith/Faith_ The Link with Gods Power - Reinhard Bonnke.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Faith-of-Our-Fathers James Cardinal Gibbons",
+    author: "Cardinal Gibbons",
+    url: require("../public/faith/Faith-of-Our-Fathers James Cardinal Gibbons.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Force of Faith - Kenneth Copeland",
+    author: "Kenneth Copeland",
+    url: require("../public/faith/Force of Faith - Kenneth Copeland.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "From_Faith_to Faith_Watchman Nee",
+    author: "Watchman Nee",
+    url: require("../public/faith/From_Faith_to Faith_Watchman Nee.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "george-muller-man-of-faith-and-miracles",
+    author: "George Muller",
+    url: require("../public/faith/george-muller-man-of-faith-and-miracles.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Hardness of Heart - Andrew Wommack",
+    author: "Andrew Wommack",
+    url: require("../public/faith/Hardness of Heart - Andrew Wommack.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "How to Make Your Faith Work - Chris Oyakhilome",
+    author: "Chris Oyakhilome",
+    url: require("../public/faith/How to Make Your Faith Work - Chris Oyakhilome.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "HOW TO MAKE YOUR FAITH WORK DAG HEWARDS MILLS",
+    author: "DAG HEWARDS MILLS",
+    url: require("../public/faith/HOW TO MAKE YOUR FAITH WORK DAG HEWARDS MILLS.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Kenneth E Hagin - FAITH By Saying and Praying",
+    author: "Kenneth E Hagin",
+    url: require("../public/faith/Kenneth E Hagin - FAITH By Saying and Praying.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Kenneth E Hagin - Mountain Moving Faith",
+    author: "Kenneth E Hagin",
+    url: require("../public/faith/Kenneth E Hagin - Mountain Moving Faith.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Kenneth E Hagin - The Real Faith",
+    author: "Kenneth E Hagin",
+    url: require("../public/faith/Kenneth E Hagin - The Real Faith.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Kenneth Hagin - What Faith Is",
+    author: "Kenneth E Hagin",
+    url: require("../public/faith/Kenneth Hagin - What Faith Is.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Kenneth-E-Hagin-Exceedingly Growing Faith",
+    author: "Kenneth E Hagin",
+    url: require("../public/faith/Kenneth-E-Hagin-Exceedingly Growing Faith.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Legacy of Faith_ T.L. Osborn - T.L. Osborn",
+    author: "T.L. Osborn",
+    url: require("../public/faith/Legacy of Faith_ T.L. Osborn - T.L. Osborn.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Oral Roberts - Seed-Faith",
+    author: "Oral Roberts",
+    url: require("../public/faith/Oral Roberts - Seed-Faith.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Smith Wigglesworth - The Apostles of Faith",
+    author: "Smith Wigglesworth",
+    url: require("../public/faith/Smith Wigglesworth - The Apostles of Faith.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Smith Wigglesworth Ever increasing Faith",
+    author: "Smith Wigglesworth",
+    url: require("../public/faith/Smith Wigglesworth Ever increasing Faith.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "Smith Wigglesworth-Faith_That_Prevails",
+    author: "Smith Wigglesworth",
+    url: require("../public/faith/Smith Wigglesworth-Faith_That_Prevails.pdf"),
+    category: "Faith",
+  },
+  {
+    name: "TRUE FAITH - Collins Urkuhart",
+    author: "Collins Urkuhart",
+    url: require("../public/faith/TRUE FAITH - Collins Urkuhart.pdf"),
+    category: "Faith",
+  },
+];
+
+export default faithBooks;
