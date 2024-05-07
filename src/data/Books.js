@@ -54,4 +54,6 @@ const books = [
   ...SoulWinningBooks,
 ];
 
+books.sort((v) => 0.5 - Math.random());
+
 export default books;

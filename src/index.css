@@ -5,35 +5,106 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+  background-color: whitesmoke;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.popup div {
+  height: 150px;
+  width: 90%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.popup div p {
+  text-align: center;
+  width: 80%;
+  font-weight: 540;
+}
+.popup div button {
+  width: 120px;
+  height: 40px;
+  font-weight: 550;
+  border: 1px solid rgb(17, 17, 51);
+  color: whitesmoke;
+  background-color: rgb(17, 17, 51);
+  transition: all 400ms;
+  border-radius: 10px;
+}
+.popup div button:hover {
+  color: black;
+  background-color: transparent;
+}
 .nav {
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 60px;
   background-color: rgb(17, 17, 51);
   color: white;
   z-index: 2;
+}
+.nav h2 {
+  display: block;
+  font-size: 30px;
 }
 .nav-con {
   width: 90%;
   max-width: 1200px;
   display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
   align-items: center;
   justify-content: space-between;
 }
 .nav-con ul {
-  display: flex;
+  display: none;
   list-style: none;
   gap: 25px;
   font-weight: 550;
 }
+.nav-con ul li {
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  width: 100vw;
+  height: 0;
+  left: 0;
+  top: 60px;
+  background-color: rgb(17, 17, 51);
+  transition: all 400ms;
+  overflow-y: hidden;
+}
+.dropdown li {
+  padding: 5px;
+  list-style: none;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(21, 21, 63);
+  height: 50px;
+}
+/*header*/
 .header {
   background-image: url("./public/hero.jpeg");
-  height: 100vh;
+  height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -46,9 +117,13 @@
   text-align: center;
   flex-direction: column;
 }
+.header h1 {
+  font-size: 25px;
+  width: 95%;
+}
 .search {
   height: 35px;
-  width: 450px;
+  width: 85%;
   border-radius: 10px;
   background-color: white;
   position: relative;
@@ -78,7 +153,65 @@
   width: 70px;
   top: 0;
   font-size: 20px;
+  cursor: pointer;
+  transition: all 400ms;
 }
+.search span:hover {
+  width: 80px;
+}
+/*ADS*/
+.ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ads-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgb(17, 17, 51);
+  border-radius: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.ads-con div {
+  height: 300px;
+  width: 90%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.ads-con div:hover {
+  text-decoration: underline;
+}
+.ads-con div p {
+  font-size: 18px;
+  padding: 5px;
+}
+.ads-con section {
+  width: 95%;
+  height: 70%;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+.ads-con img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+/*books*/
 .body {
   width: 100%;
   display: flex;
@@ -88,18 +221,21 @@
 .allbooks {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   width: 100%;
   max-width: 1200px;
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .allbooks div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  width: 40%;
+  width: 85%;
   padding: 10px;
   border: 1px solid lightgray;
   border-radius: 10px;
@@ -108,6 +244,7 @@
 }
 .allbooks div p {
   font-size: 14px;
+  word-break: break-all;
 }
 .allbooks section {
   display: flex;
@@ -120,8 +257,8 @@
 }
 .dbtn {
   border: 1px solid lightgrey;
-  height: 30px;
-  width: 30px;
+  min-height: 30px;
+  min-width: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -131,5 +268,153 @@
 .dbtn:active {
   color: purple;
 }
+/*search*/
+.search-header {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding-top: 70px;
+}
+.search-header h1 {
+  font-size: 25px;
+  text-align: center;
+}
+.search-header form {
+  display: flex;
+  gap: 5px;
+  width: 90%;
+  justify-content: center;
+}
+.search-header input {
+  border: 1px solid rgb(17, 17, 51);
+  width: 50%;
+  max-width: 350px;
+  min-width: 200px;
+  height: 35px;
+  padding: 5px;
+  font-size: 17px;
+  background-color: whitesmoke;
+}
+.search-header input:active {
+  outline: none;
+}
+.search-header button {
+  background-color: rgb(17, 17, 51);
+  color: white;
+  font-weight: 550;
+  border: none;
+  width: 80px;
+  border: 1px solid rgb(17, 17, 51);
+  transition: all 400ms;
+  cursor: pointer;
+}
+.search-header button:hover {
+  color: rgb(17, 17, 51);
+  background-color: transparent;
+}
+.no-search {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-search-con {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 10px;
+}
+/*category*/
+.category {
+  padding-top: 75px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+.category-con {
+  width: 100%;
+  max-width: 1200px;
+}
+.category-con div {
+  padding: 10px;
+  height: 60px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.category-con div:hover {
+  text-decoration: underline;
+}
+/*Footer*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: rgb(15, 15, 15);
+  color: lightgray;
+}
+.footer-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.socials {
+  display: flex;
+  gap: 10px;
+}
+.contact {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.contact b {
+  display: flex;
+  align-items: center;
+}
 @media (min-width: 780px) {
+  .popup div {
+    height: 200px;
+    width: 30%;
+  }
+  .nav {
+    height: 70px;
+  }
+  .nav-con h2 {
+    display: none;
+  }
+  .nav-con ul {
+    display: flex;
+  }
+  .search {
+    width: 450px;
+    height: 35px;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header h1 {
+    font-size: 35px;
+    width: 600px;
+  }
+  .allbooks {
+    flex-direction: row;
+  }
+  .allbooks div {
+    width: 45%;
+  }
+  .ads-con {
+    flex-direction: row;
+    border-radius: 20px;
+  }
+  .ads-con div {
+    height: 300px;
+    width: 25%;
+  }
 }
