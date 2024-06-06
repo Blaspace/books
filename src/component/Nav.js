@@ -48,8 +48,30 @@ function Nav() {
           </NavLink>
         </ul>
         <ul>
-          <li>About us</li>
-          <li>Terms of service</li>
+          <NavLink
+            to={"../about"}
+            style={({ isActive }) => ({
+              color: "white",
+              textDecoration: "none",
+              borderBottom: isActive
+                ? "3px solid orangered"
+                : "3px solid transparent",
+            })}
+          >
+            <li>About us</li>
+          </NavLink>
+          <NavLink
+            to={"../terms"}
+            style={({ isActive }) => ({
+              color: "white",
+              textDecoration: "none",
+              borderBottom: isActive
+                ? "3px solid orangered"
+                : "3px solid transparent",
+            })}
+          >
+            <li>Terms of service</li>
+          </NavLink>
         </ul>
         <h2 onClick={() => (tuggle ? setTuggle(false) : setTuggle(true))}>
           {tuggle ? <span>&times;</span> : <MdOutlineMenu size={25} />}

@@ -12,7 +12,6 @@ function Header() {
         authors
       </h1>
       <br />
-      <br />
       <div className="search">
         <input
           type="text"

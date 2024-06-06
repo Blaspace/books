@@ -41,7 +41,7 @@ function Dropdown({ tuggle }) {
         <li>Authors</li>
       </NavLink>
       <NavLink
-        to={"../authors"}
+        to={"../about"}
         style={({ isActive }) => ({
           color: "white",
           textDecoration: "none",
@@ -50,7 +50,7 @@ function Dropdown({ tuggle }) {
         <li>About us</li>
       </NavLink>
       <NavLink
-        to={"../authors"}
+        to={"../terms"}
         style={({ isActive }) => ({
           color: "white",
           textDecoration: "none",

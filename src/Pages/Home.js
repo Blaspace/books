@@ -28,7 +28,7 @@ function Home() {
     <div>
       <Nav />
       <Header />
-      <AllBooks books={books.slice(0, 4)} />
+      <AllBooks books={books.slice(0, 8)} />
       <BooksAd ads={ads} />
       <AllBooks books={books.slice(10, 20)} />
       <br />
