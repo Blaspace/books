@@ -1,14 +1,14 @@
 on:
  push:
   branches:
-   - main
-   - name: yeshuabooks
-
-     jobs:
-     web-deploy:
+     - main
+     - name: yeshuabooks
+       jobs:
+       web-deploy:
+       
      - name: Deploy
-     runs-on: Ubuntu-latest
-     steps:
+       runs-on: Ubuntu-latest
+       steps:
      - name: get latest code
        uses: actions/checkout@v4
      - name: Setup Node
