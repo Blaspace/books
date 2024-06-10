@@ -1,16 +1,28 @@
-on: 
-  push:
-    branches:
-    - main
-      name: Deploy website on push
-      jobs:
-        web-deploy:
-          name: Deploy
-            runs-on: ubuntu-latest
-            steps:
-            - name: Get latest code
-              uses: actions/checkout@v2
-              with:
-                server: ftp.yeshuabooks.com.ng
-                username: ${{secrets.ftp_name}}
-                password: ${{secrets.ftp_password}} 
+            - name: FTP Deployer
+  # You may pin to the exact commit or the version.
+  # uses: sand4rt/ftp-deployer@518beaad91d1b18fd55a69321de7ed89080d2ae3
+  uses: sand4rt/ftp-deployer@v1.8
+  with:
+    # SFTP on
+    sftp: # optional
+    # FTP host URL like: ftp.host.com or sftp.host.com
+    host: ftp.yeshuabooks.com.ng
+    # FTP port
+    port: # optional, default is 21
+    # Ftp username
+    username: ${{secrets.ftp_name}}
+    # Ftp password
+    password:${{secrets.ftp_password}} 
+    # The remote folder location of your FTP server
+    remote_folder: # optional
+    # The local folder location
+    local_folder: # optional, default is dist
+    # Remove existing files inside FTP remote folder
+    cleanup: # optional
+    # includes
+    include: # optional
+    # exclude
+    exclude: # optional
+    # passive
+    passive: # optional
+          
