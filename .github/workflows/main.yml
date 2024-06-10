@@ -2,7 +2,7 @@ on:
   push:
     branches:
     - main
-      name: yeshua books deploy
+      name: Deploy website on push
       jobs:
         web-deploy:
           name: Deploy
