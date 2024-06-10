@@ -4,24 +4,24 @@ on:
       - main
       - release/*
 jobs:
-  web-deploy:
-    - name: Deploy
+    web-deploy:
+      name: Deploy
       runs-on: Ubuntu-latest
-  steps:
-    - name: get latest code
-      uses: actions/checkout@v4
-    - name: Setup Node
-      uses: actions/setup-node@v4
-      with:
-      node-version: "20.x"
+      steps:
+      - name: get latest code
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
 
-    - name: build project
-      run: |
-        npm install
-        npm run build
-    - name: Sync files
-  uses: samkirkland/FTP-Deploy-Action@v4.3.4
-    with:
-      server: ftp.yeshuabooks.com.ng
-      username: blaspace@yeshuabooks.com.ng
-      password: NIF$I5;PzqT;
+      - name: build project
+        run: |
+          npm install
+          npm run build
+      - name: Sync files
+        uses: samkirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.yeshuabooks.com.ng
+          username: blaspace@yeshuabooks.com.ng
+          password: NIF$I5;PzqT;
