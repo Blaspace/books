@@ -1,14 +1,28 @@
-- name: FTP Deployer
-  uses: sand4rt/ftp-deployer@v1.8
-  with:
-    sftp: false # optional
-    host: ${{ secrets.FTP_HOST }} # e.g. ftp.host.com or sftp.host.com (without ftp:// or ftps://)
-    port: 21 # optional, default is: 21
-    username: ${{ secrets.ftp_name }} # FTP username
-    password: ${{ secrets.ftp_password }} # FTP password
-    remote_folder: ${{ secrets.FTP_REMOTE_FOLDER }} # optional, remote path of your FTP server
-    local_folder: dist # optional, local path, default is: dist
-    cleanup: false # optional, remove existing files inside FTP remote folder
-    include: '[]' # optional, e.g. '['dist']'
-    exclude: '[]' # optional, e.g. '['node_modules/**', '.git/**', '*.env']'
-    passive: true # optional
+on:
+ push:
+  branches:
+   -main
+name: yeshuabooks
+
+jobs:
+ web-deploy:
+  name: Deploy
+ runs-on: Ubuntu-latest
+steps:
+ name: get latest code
+  uses: actions/checkout@v3
+name: Use Node js 20
+ uses: actions/setup-node@v2
+with:
+ node-version: '20'
+
+name: build project
+ run: |
+  npm install
+  npm run build
+name: Sync files
+uses: samkirkland/FTP-Deploy-Action@v4.3.4
+ with:
+server: blaspace
+
+ 
