@@ -17,12 +17,25 @@ import healingBooks from "./HealingBooks";
 import holySpiritBooks from "./HolySpiritBooks";
 import leadershipBooks from "./LeadershipBooks";
 import lifestyleBooks from "./LifestyleBooks";
+import menBooks from "./MenBooks";
 import mindBooks from "./MindBooks";
 import ministryBooks from "./MinistryBooks";
+import miracleBooks from "./MiracleBooks";
+import missionaryBooks from "./MisionaryBooks";
+import mysteryBooks from "./MysteryBooks";
+import obedienceBooks from "./ObedientBook";
+import personalDevelopmentBooks from "./PersonalDevelopmentBooks";
+import praiseAndWorshipBooks from "./PraiseAndWorship";
 import prayerBooks from "./PrayerBooks";
+import prophecyBooks from "./ProphecyBooks";
 import relationshipBooks from "./RelationshipBooks";
+import revivalBooks from "./RevivalBooks";
 import SoulWinningBooks from "./SoulwiningBooks";
 import visionBooks from "./VisionBooks";
+import wisdomBooks from "./WisdomBooks";
+import womenBooks from "./WomenBooks";
+import wordBooks from "./WordBooks";
+import youthBooks from "./YouthBooks";
 import voiceOfGod from "./voiceOfGodBooks";
 
 const books = [
@@ -52,8 +65,21 @@ const books = [
   ...raptureBooks,
   ...relationshipBooks,
   ...SoulWinningBooks,
+  ...prophecyBooks,
+  ...menBooks,
+  ...miracleBooks,
+  ...missionaryBooks,
+  ...mysteryBooks,
+  ...obedienceBooks,
+  ...praiseAndWorshipBooks,
+  ...personalDevelopmentBooks,
+  ...revivalBooks,
+  ...wisdomBooks,
+  ...wordBooks,
+  ...womenBooks,
+  ...youthBooks,
 ];
-
+console.log(books.length);
 books.sort((v) => 0.5 - Math.random());
 
 export default books;

@@ -14,7 +14,13 @@ function AllBooks({ books }) {
               <section>
                 <FaRegFilePdf size={40} color="orangered" />
                 <span>
-                  <p>{value.name.slice(0, 40)}</p>
+                  <p>
+                    {value.name
+                      .slice(0, 40)
+                      .replace(`${value.author}`, "")
+                      .replace("-", "")
+                      .replace("_", "")}
+                  </p>
                   <p>
                     <b>{value.author}</b>
                   </p>

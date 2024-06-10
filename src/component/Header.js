@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(null);
   return (
     <div className="header">
       <h1>
@@ -18,7 +18,13 @@ function Header() {
           placeholder="Search For Books"
           onChange={(e) => setQuery(e.target.value)}
         />
-        <span onClick={() => navigate(`./search/${query}`)}>
+        <span
+          onClick={() => {
+            if (query) {
+              navigate(`./search/${query}`);
+            }
+          }}
+        >
           <IoMdSearch />
         </span>
       </div>

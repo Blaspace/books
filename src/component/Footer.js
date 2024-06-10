@@ -7,25 +7,25 @@ const Footer = () => {
         <div className="footer-about">
           <h3>About Us</h3>
           <p>
-            At [Your Website Name], we provide a vast collection of Christian
-            books to inspire and nurture your faith. Join our community and
-            explore our extensive library.
+            At Theyeshuabooks, we provide a vast collection of Christian books
+            to inspire and nurture your faith. Join our community and explore
+            our extensive library.
           </p>
         </div>
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="../">Home</a>
             </li>
             <li>
-              <a href="/categories">Categories</a>
+              <a href="/category">Categories</a>
             </li>
             <li>
               <a href="/authors">Authors</a>
             </li>
             <li>
-              <a href="/contact">Contact Us</a>
+              <a href="/about">About</a>
             </li>
           </ul>
         </div>
@@ -71,8 +71,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>
-          &copy; {new Date().getFullYear()} [Your Website Name]. All Rights
-          Reserved.
+          &copy; {new Date().getFullYear()} Theyeshuabooks. All Rights Reserved.
         </p>
       </div>
     </footer>
