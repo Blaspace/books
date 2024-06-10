@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,9 +8,9 @@ const Footer = () => {
         <div className="footer-about">
           <h3>About Us</h3>
           <p>
-            At Theyeshuabooks, we provide a vast collection of Christian books
-            to inspire and nurture your faith. Join our community and explore
-            our extensive library.
+            At YeshuaBooks, we provide a vast collection of Christian books to
+            inspire and nurture your faith. Join our community and explore our
+            extensive library.
           </p>
         </div>
         <div className="footer-links">
@@ -31,40 +32,31 @@ const Footer = () => {
         </div>
         <div className="footer-contact">
           <h3>Contact Us</h3>
-          <p>Email: [Your Email Address]</p>
-          <p>Phone: [Your Phone Number]</p>
-          <p>Address: [Your Physical Address]</p>
+          <p>Phone: +234 816 653 3430</p>
         </div>
         <div className="footer-social">
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a
-              href="https://www.facebook.com"
+              href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-facebook-f"></i>
+              <FaFacebook size={25} />
             </a>
             <a
               href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-twitter"></i>
+              <FaTwitter size={25} />
             </a>
             <a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin-in"></i>
+              <FaInstagram size={25} />
             </a>
           </div>
         </div>

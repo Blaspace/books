@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { MdOutlineMenu } from "react-icons/md";
 import Dropdown from "./Dropdown";
+import logo from "../public/logo.png";
 
 function Nav() {
   const [tuggle, setTuggle] = useState(false);
   return (
     <nav className="nav">
       <div className="nav-con">
-        <h1>TheScribe</h1>
+        <img src={logo} height={70} width={70} alt="yeshuaBooks" />
         <ul>
           <NavLink
             to={"../../"}

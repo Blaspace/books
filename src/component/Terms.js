@@ -6,12 +6,12 @@ function Terms() {
       <div className="terms">
         <br />
         <p>
-          Welcome to TheYeshuaBooks!
+          Welcome to YeshuaBooks!
           <br /> These terms and conditions outline the rules and regulations
-          for the use of TheYeshuaBooks's Website, located at [Your Website
-          URL]. By accessing this website we assume you accept these terms and
-          conditions. Do not continue to use TheYeshuaBooks if you do not agree
-          to take all of the terms and conditions stated on this page.
+          for the use of YeshuaBooks's Website, located at yeshuabooks.com.ng .
+          By accessing this website we assume you accept these terms and
+          conditions. Do not continue to use YeshuaBooks if you do not agree to
+          take all of the terms and conditions stated on this page.
         </p>
         <br />
         <h2>Terminology</h2>
@@ -35,17 +35,17 @@ function Terms() {
         <br />
         <h2>License</h2>
         <p>
-          Unless otherwise stated, TheYeshuaBooks and/or its licensors own the
-          intellectual property rights for all material on [Your Website Name].
-          All intellectual property rights are reserved. You may access this
-          from TheYeshuaBooks for your own personal use subjected to
-          restrictions set in these terms and conditions.
+          Unless otherwise stated, YeshuaBooks and/or its licensors own the
+          intellectual property rights for all material on YeshuaBooks. All
+          intellectual property rights are reserved. You may access this from
+          YeshuaBooks for your own personal use subjected to restrictions set in
+          these terms and conditions.
         </p>
         <p>You are allowed to:</p>
         <ul>
           <li>
-            Use the data and content from TheYeshuaBooks as you wish, provided
-            it does not infringe on any third-party rights
+            Use the data and content from YeshuaBooks as you wish, provided it
+            does not infringe on any third-party rights
           </li>
           <li>
             Share, distribute, and reproduce content as long as proper credit is
@@ -54,11 +54,11 @@ function Terms() {
           <br />
           <p>You must not:</p>
           <li>
-            Sell, rent, or sub-license material from TheYeshuaBooks without
-            proper authorization.
+            Sell, rent, or sub-license material from YeshuaBooks without proper
+            authorization.
           </li>
           <li>
-            Misrepresent or modify the content from TheYeshuaBooks in a way that
+            Misrepresent or modify the content from YeshuaBooks in a way that
             might mislead others.
           </li>
         </ul>
@@ -75,9 +75,9 @@ function Terms() {
         <br />
         <h2>Changes to Terms</h2>
         <p>
-          TheYeshuaBooks is permitted to revise these Terms at any time as it
-          sees fit, and by using this Website you are expected to review these
-          Terms on a regular basis.
+          YeshuaBooks is permitted to revise these Terms at any time as it sees
+          fit, and by using this Website you are expected to review these Terms
+          on a regular basis.
         </p>
         <br />
         <h2>Contact Information</h2>

@@ -31,6 +31,7 @@ import prophecyBooks from "./ProphecyBooks";
 import relationshipBooks from "./RelationshipBooks";
 import revivalBooks from "./RevivalBooks";
 import SoulWinningBooks from "./SoulwiningBooks";
+import spiritualGrowthBooks from "./SpiritualGrowthBooks";
 import visionBooks from "./VisionBooks";
 import wisdomBooks from "./WisdomBooks";
 import womenBooks from "./WomenBooks";
@@ -78,8 +79,8 @@ const books = [
   ...wordBooks,
   ...womenBooks,
   ...youthBooks,
+  ...spiritualGrowthBooks,
 ];
-console.log(books.length);
 books.sort((v) => 0.5 - Math.random());
 
 export default books;

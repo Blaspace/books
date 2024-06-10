@@ -5,9 +5,9 @@ function About() {
     <div className="terms-con">
       <div className="terms">
         <br />
-        <h2>Welcome to TheYeshuaBooks!</h2>
+        <h2>Welcome to YeshuaBooks!</h2>
         <p>
-          At TheYeshuaBooks, we are dedicated to providing a vast collection of
+          At YeshuaBooks, we are dedicated to providing a vast collection of
           Christian books to inspire, educate, and nurture your faith. Our
           mission is to make these valuable resources easily accessible to
           everyone, free of charge.
