@@ -240,9 +240,9 @@ const relationshipBooks = [
     category: "Relationship and Marriage",
   },
   {
-    name: "Things I Wish I’d Known Before We Got Married Gary Chapman",
+    name: "Things I Wish I Known Before We Got Married Gary Chapman",
     author: "Gary Chapman",
-    url: require("../public/relationship/Things I Wish I’d Known Before We Got Married Gary Chapman.pdf"),
+    url: require("../public/relationship/Things I Wish I Known Before We Got Married Gary Chapman.pdf"),
     category: "Relationship and Marriage",
   },
   {
