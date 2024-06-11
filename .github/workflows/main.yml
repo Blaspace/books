@@ -22,6 +22,6 @@ jobs:
       - name: Sync files
         uses: samkirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server:  ftp.yeshuabooks.com.ng
+          server: ftp.yeshuabooks.com.ng
           username: yeshuabooks@yeshuabooks.com.ng
           password: XB@u#jes5J%l
