@@ -38,7 +38,7 @@ const Footer = () => {
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a
-              href="https://www.twitter.com"
+              href="https://facebook.com/groups/479177554658094/"
               target="_blank"
               rel="noopener noreferrer"
             >
